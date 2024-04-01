@@ -13,6 +13,14 @@
   }
 }
 
+.navbar-toggler-icon {
+  background-image: url("./assets/imgs/glass.jpg") !important;
+}
+
+button:focus {
+  box-shadow: 0.1rem 0.1rem #c4c4c4 !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
