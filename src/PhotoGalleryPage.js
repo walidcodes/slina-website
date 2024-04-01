@@ -6,7 +6,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../assets/imgs/gallery", false, /\.(png|jpe?g|svg)$/)
+  require.context("./assets/imgs/gallery", false, /\.(png|jpe?g|svg)$/)
 );
 
 export default function PhotoGallery() {
