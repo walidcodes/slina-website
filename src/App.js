@@ -5,13 +5,13 @@ import "./App.css"; // You can create this CSS file for styling
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import pages
-import Home from "./HomePage";
-import About from "./AboutPage";
-import PhotoGallery from "./PhotoGalleryPage";
-import Discography from "./Discography";
-import VideoGallery from "./VideoGalleryPage";
-import Contact from "./ContactPage";
-import NoPage from "./NoPage";
+import Home from "./pages/HomePage";
+import About from "./pages/AboutPage";
+import PhotoGallery from "./pages/PhotoGalleryPage";
+import Discography from "./pages/Discography";
+import VideoGallery from "./pages/VideoGalleryPage";
+import Contact from "./pages/ContactPage";
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (

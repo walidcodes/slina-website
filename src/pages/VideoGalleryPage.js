@@ -6,10 +6,10 @@ function importAll(r) {
   return r.keys().map(r);
 }
 const videos = importAll(
-  require.context("./assets/videos", false, /\.(mov|mp4|avi)$/)
+  require.context("../assets/videos", false, /\.(mov|mp4|avi)$/)
 );
 const thumbnails = importAll(
-  require.context("./assets/videos/thumbnails", false, /\.(gif|jpg|png)$/)
+  require.context("../assets/videos/thumbnails", false, /\.(gif|jpg|png)$/)
 );
 
 export default function VideoGallery() {
