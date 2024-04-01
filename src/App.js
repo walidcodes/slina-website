@@ -61,7 +61,7 @@ function App() {
       </Navbar>
 
       <Container className="mt-4">
-        <HashRouter>
+        <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/discography" element={<Discography />} />
           <Route path="/photo-gallery" element={<PhotoGallery />} />
@@ -69,7 +69,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
-        </HashRouter>
+        </Routes>
       </Container>
     </Router>
   );
