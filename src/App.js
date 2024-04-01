@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  HashRouter,
+} from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
 import "./App.css"; // You can create this CSS file for styling
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -56,7 +61,7 @@ function App() {
       </Navbar>
 
       <Container className="mt-4">
-        <Routes>
+        <HashRouter>
           <Route index path="/" element={<Home />} />
           <Route path="/discography" element={<Discography />} />
           <Route path="/photo-gallery" element={<PhotoGallery />} />
@@ -64,7 +69,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
-        </Routes>
+        </HashRouter>
       </Container>
     </Router>
   );
